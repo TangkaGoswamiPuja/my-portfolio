@@ -17,7 +17,7 @@ const Footer = () => {
             <p>Frontend Developer</p>
            
 
-                            <img src="/src/image/mail.png" alt="mail" />
+                            {/* <img src="/src/image/mail.png" alt="mail" /> */}
                             <p>
                                 web4dev2learning0@gmail.com
                             </p>

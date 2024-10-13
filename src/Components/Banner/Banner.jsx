@@ -1,9 +1,10 @@
 import React from 'react';
 import './Banner.css';
 import profile_img from '/src/image/IMG_20220423_231155_965.jpg';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 const Banner = () => {
     return (
-        <div className='banner' >
+        <div id='b' className='banner' >
             <img src= {profile_img} alt="profile" />
             <h1>
               <span>I'm TANGKA GOSWAMI PUJA</span>, fronted developer based in Bangladesh.
@@ -13,7 +14,7 @@ const Banner = () => {
 
             <div className="banner-action">
                 <div className="banner-connect">
-                    Connect with me
+                <AnchorLink   className='an-link' offset={50} href='#c'> Connect with me</AnchorLink>
                 </div>
                 <div className="banner-resume">My Resume</div>
             </div>

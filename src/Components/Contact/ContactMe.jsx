@@ -1,10 +1,40 @@
 import React from 'react';
 import './Contact.css';
+import Swal from 'sweetalert2';
 
 
 const ContactMe = () => {
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+    
+        formData.append("access_key", "8ad14764-5a4f-47f4-8756-2f4d3592a244");
+    
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+    
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json"
+          },
+          body: json
+        }).then((res) => res.json());
+    
+        if (res.success) {
+        //   console.log("Success", res);
+          Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Your work has been saved",
+            showConfirmButton: false,
+            timer: 1500
+          });
+        }
+      };
     return (
-        <div className='contact'>
+        <div id='c' className='contact'>
             <div className="contact-title">
                 <h1>Get in touch</h1>
                 <img src="/src/image/customer-service (1).png" alt=" profile" />
@@ -39,7 +69,7 @@ const ContactMe = () => {
 
                 </div>
 
-                <form className="contact-right">
+                <form onSubmit={onSubmit} className="contact-right">
  <label htmlFor=""> Your Name</label>
 
                     <input type="text"  name="name" placeholder=" Enter Your Name" />
