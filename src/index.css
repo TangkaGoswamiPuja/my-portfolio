@@ -14,7 +14,7 @@ body{
   height: 100vh;
 color: white;
 font-family: 'outfit';
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
-@tailwind utilities; 
+@tailwind utilities;  */
 }

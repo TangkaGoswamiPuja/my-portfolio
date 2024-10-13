@@ -1,0 +1,130 @@
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+    margin: 80px 170px;
+
+}
+
+.contact-title{
+    position: relative;
+}
+.contact-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.contact-title img{
+   
+    position: absolute;
+    bottom: -25px;
+    right:-20px;
+    z-index: -1;
+}
+
+.contact-section{
+    display: flex;
+    gap: 150px;
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-left h1{
+    font-size: 80px;
+    font-weight: 700;
+    background: linear-gradient(264deg,#DF8908 -5.09% , #B415FF 106.28%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.contact-left p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #D8D8D8;
+    min-width: 550px;
+    line-height: 35px;
+}   
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
+    
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #D8D8D8;
+    font-size: 22px;
+}
+
+.contact-detail{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-right label{
+    font-size: 22px;
+    font-weight: 600;
+    color: #D8D8D8;
+}
+
+.contact-right input{
+    width: 700px;
+    height: 78px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: Outfit;
+    font-weight: 400;
+    background: #1F1F1F;
+    color: #A0A0A0;
+}
+
+.contact-right textarea{
+    width: 600px;
+    height: 200px;
+    border: none;
+    border-radius: 5px;
+    padding: 25px;
+    font-size: 20px;
+    font-family: Outfit;
+    font-weight: 400;
+    background: #1F1F1F;
+    color: #A0A0A0;
+}
+
+.contact-submit {
+    width: 200px;
+    height: 70px;
+    border: none;
+    border-radius: 50px;
+    border: 2px solid white;
+    font-size: 20px;
+    padding: 20px 60px;
+    margin-bottom: 50px;
+    font-weight: 600;
+    background: linear-gradient(264deg,#DF8908 -5.09% , #B415FF 106.28%);
+    color: #D8D8D8;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-submit:hover{
+transform: scale(1.1) ;
+transition: 0.3s;
+border: 2px solid #DF8908;
+background:none;
+}
