@@ -6,7 +6,7 @@ import Skills from './Skills';
 const AboutMe = () => {
     return (
         <div id='a' className='about'>
-            <div className="about-title">
+            <div data-aos="fade-up-right" data-aos-duration="3000" className="about-title">
                 <h1>About Me</h1>
                 <img className='red' src="/src/image/cool-background .png" alt=" profile" />
  </div>
@@ -14,12 +14,12 @@ const AboutMe = () => {
  
 
          <div className="about-section">
-                <div className="about-left">           
+                <div data-aos="fade-down-right" data-aos-duration="3000" className="about-left">           
                          <img className='dp' src={profile_img} alt="profile" />
                 </div>
                 <div className="about-right">
 
-                    <div className="about-para">
+                    <div data-aos="fade-down-left"  data-aos-duration="3000" className="about-para">
                         <p>
                        <b>I</b> am studying Computer Science at Dhaka City College under the <i>National University</i> of Bangladesh. Recently, I completed a Web Development Course from <i>Programming HERO</i>, where I learned skills like HTML, CSS, JavaScript, React.js, and Node.js.<br></br> I’m really passionate about front-end development, which means I love creating websites that are easy to use and look great on all devices.I have experience working with tools like React.js, JavaScript and Firebase for user authentication. <br></br> I’m also familiar with using Git and GitHub for version control, and VS Code for writing code. I enjoy using Bootstrap and Material UI to make websites look good on all screens, and I’ve used React Hook Form for handling forms, Swiper for sliders, and AOS for adding smooth animations to my websites. <br></br> I’m always excited to solve problems and make the user experience as simple and enjoyable as possible.I have a passion for web design and love to create for web and mobile devices.<br></br> I have a strong foundation in web design and development. I am constantly learning and improving my skills.</p>
                     </div>

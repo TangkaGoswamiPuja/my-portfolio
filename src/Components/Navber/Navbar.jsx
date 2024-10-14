@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import './Navbar.css';
-import { NavLink } from 'react-router-dom';
-import AboutMe from '../About/AboutMe';
+
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 const Navbar = () => {
     const menuRef = useRef();
@@ -13,7 +12,10 @@ const Navbar = () => {
     }
     return (
                <div className="navbar">
-                    <h1>PUJA</h1>
+                   <div data-aos="fade-right"
+                   data-aos-duration="3000">
+                   <h1>PUJA</h1>
+                   </div>
                     <img className='nav-open'  onClick={openMenu}  src="/src/image/list.png" alt="" />
                     <ul ref={menuRef}className='nav-menu'>
                         <img  onClick={closeMenu}  className='nav-close' src="/src/image/close.png" alt="" />

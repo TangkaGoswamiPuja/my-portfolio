@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className='footer'>
            <div className='footer-top'>
-           <div className="footer-top-left">
+           <div data-aos="fade-up-right" data-aos-duration="3000" className="footer-top-left">
            <h1>
             why should you hire me?
            </h1>
@@ -12,7 +12,8 @@ const Footer = () => {
 
             </div>
 <hr/>
-            <div className="footer-top-right">
+            <div data-aos="fade-right"
+                   data-aos-duration="3000" className="footer-top-right">
              <h1>PUJA</h1>
             <p>Frontend Developer</p>
            
