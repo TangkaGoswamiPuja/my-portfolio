@@ -15,14 +15,14 @@ gap: 35px;
 }
 
 .banner h1{
-    font-size:90px;
+    font-size:80px;
     width: 70%;
     font-weight: 600;
     color: #fff;
     text-align: center;
 }
 
-.banner h1 span{
+.banner h1 span ,p span{
 background: linear-gradient(270deg, #DF8908 10% , #B415FF 100% );
 background-clip: text;
 -webkit-background-clip: text;
@@ -69,4 +69,30 @@ border:  2px solid white
     /* background: linear-gradient(264deg, #B415FF -5.09% , #DF8908 106.28% ); */
 
     border-color: #B415FF;
+}
+
+@media screen and (max-width: 768px){
+    .banner h1{
+        font-size: 50px;
+        margin-top:-100px ;
+        width: 90%;
+    }
+    .banner p{
+        font-size: 20px;
+    }
+    .banner img{
+        width: 50%;
+        height: 50%;
+        margin-bottom: 120px;
+    }
+    .banner-action{
+        flex-direction: column;
+    }
+    .banner-connect{
+        padding: 15px 25px;
+    }
+    .banner-resume{
+        padding: 15px 25px;
+    }
+    
 }
