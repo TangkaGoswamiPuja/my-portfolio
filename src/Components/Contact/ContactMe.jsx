@@ -2,6 +2,9 @@ import React from 'react';
 import './Contact.css';
 import Swal from 'sweetalert2';
 import chat from '../../image/customer-service (1).png';
+import mail from '../../image/mail.png';
+import phone from '../../image/phone.png';
+import map from '../../image/google-maps.png';
 
 
 const ContactMe = () => {
@@ -51,21 +54,21 @@ const ContactMe = () => {
                     <div className="contact-details">
                         <div data-aos="fade-up"
      data-aos-anchor-placement="top-bottom" className="contact-detail">
-                            <img src="/src/image/mail.png" alt="mail" />
+                            <img src={mail} alt="mail" />
                             <p>
                                 web4dev2learning0@gmail.com
                             </p>
                         </div>
                         <div data-aos="fade-up"
      data-aos-anchor-placement="center-bottom" className="contact-detail">
-                            <img src="/src/image/phone.png" alt="phone" /><p>
+                            <img src={phone} alt="phone" /><p>
                                 +8801886736932
                             </p>
 
                         </div>
                         <div data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom" className="contact-detail">
-                            <img src="/src/image/google-maps.png" alt="location" />
+                            <img src={map} alt="location" />
                             <p>Wari,Dhaka,Bangladesh</p>
                         </div>
 
