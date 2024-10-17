@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import Swal from 'sweetalert2';
+import chat from '../../image/customer-service (1).png';
 
 
 const ContactMe = () => {
@@ -37,7 +38,7 @@ const ContactMe = () => {
         <div id='c' className='contact'>
             <div data-aos="zoom-in-down"  data-aos-duration="3000"className="contact-title">
                 <h1>Get in touch</h1>
-                <img src="/src/image/customer-service (1).png" alt=" profile" />
+                <img src={chat}  alt=" profile" />
             </div>
 
             <div className="contact-section">

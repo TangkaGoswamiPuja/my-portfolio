@@ -2,13 +2,15 @@ import React from 'react';
 import './About.css';
 import profile_img from '/src/image/IMG_20220423_231155_965.jpg';
 import Skills from './Skills';
+import banner from '../../image/cool-background .png';
+
 
 const AboutMe = () => {
     return (
         <div id='a' className='about'>
             <div data-aos="fade-up-right" data-aos-duration="3000" className="about-title">
                 <h1>About Me</h1>
-                <img className='red' src="/src/image/cool-background .png" alt=" profile" />
+                <img className='red' src={banner} alt=" profile" />
  </div>
 
  
