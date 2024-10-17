@@ -56,7 +56,7 @@ const ContactMe = () => {
      data-aos-anchor-placement="top-bottom" className="contact-detail">
                             <img src={mail} alt="mail" />
                             <p>
-                                web4dev2learning0@gmail.com
+                            tangkagoswamipuja@gmail.com
                             </p>
                         </div>
                         <div data-aos="fade-up"
